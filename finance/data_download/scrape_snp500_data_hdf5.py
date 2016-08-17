@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 import urllib2
 import pytz
 import pandas as pd
