@@ -1,0 +1,19 @@
+
+Neil Cho
+CS22001 Warm-up Project written answers
+
+Please add your written answers to the question in the assignment specification
+to this file! *** ONLY ANSWERS IN THIS EXACT FILE WILL BE GRADED! ***
+
+1. 
+  a) Because the map object is an already constructed data structure in the stl library with various functionalities that also matches the requirement of our program. The data structure we wish to implement is to be able to identify unique member and its ancillary information. <Key, Value> structure of map is a good way to do that where key is used to identify uniqueness and value is used to access additional information of that specific member. Although map might not be the perfect data structure for the implementation of the social network program, for simplicity’s sake and to take advantage of a prepared library, map is a decent choice. 
+
+2. 
+  a) Because you do not want another member accessing your inbox and reading messages you've received, automatically deleting it afterwards. An inbox should be manged by the member who uniquely owns his/her inbox and the way to implement that is to make the inbox private thus making it accessible only through the method of the member.
+  
+  b) I will implement this by creating a private list of username strings. 
+  
+3.
+  a) Implementing the community with map seems to be a good design choice. The design choice suits well with our need of identifying a member and executing appropriate operations on it. A list or array could have been used to implement the community structure but doing so would have prevented the rich functionalities of map such as being able to associate a key with a Person class, finding the member and accessing the information, and adding a Person into the community with ease. Using queue for the inbox structure was also quite clever in that pop and push was easy and good enough to organize the simple inbox we wanted to implement.
+
+  b) Community::get_member seemed to be not the best design choice because it returned a copy of a Person rather than a pointer to it. This complicated the job of sending a message to select members of the community, because a new copy had to be inserted to the community everytime and reassigned to the existing person class.

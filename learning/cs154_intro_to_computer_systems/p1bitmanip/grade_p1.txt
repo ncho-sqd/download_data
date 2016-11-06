@@ -1,0 +1,27 @@
+gcc -O -Wall -m32 -lm -o btest bits.c btest.c decl.c tests.c 
+gcc -O -Wall -m32 -lm -o btest bits.c btest.c decl.c tests.c 
+
+
+Correctness Results	Perf Results
+Points	Rating	Errors	Points	Ops	Puzzle
+4	4	0	2	5	absVal
+3	3	0	2	9	addOK
+2	2	0	2	9	allEvenBits
+2	2	0	2	16	byteSwap
+2	2	0	2	10	divpwr2
+3	3	0	2	6	ezThreeFourths
+2	2	0	2	7	fitsBits
+4	4	0	2	69	greatestBitPos
+4	4	0	2	44	ilog2
+2	2	0	2	2	implication
+4	4	0	2	11	isPower2
+4	4	0	2	11	logicalNeg
+3	3	0	2	8	multFiveEighths
+3	3	0	2	13	rotateLeft
+4	4	0	2	15	satAdd
+4	4	0	2	8	sm2tc
+4	4	0	2	8	tc2sm
+4	4	0	2	15	trueThreeFourths
+4	4	0	2	17	trueFiveEighths
+
+Score = 100/100 [62/62 Corr + 38/38 Perf] (283 total operators)
