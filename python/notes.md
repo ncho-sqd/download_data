@@ -33,4 +33,21 @@ np_2d[0][2] is equivalent to np_2d[0,2]
 plt.plot(year,pop)
 
 plt.show()
+plt.clf()
+plt.scatter(x,y,s=,c=,alpha=) #plots different size for each point by size s, color c, opacity is alpha
+plt.text(x,y,'text')
+plt.grid(True)
+
+dictionary = {"key":"value"}
+dictionary.keys()
+"key" in dictionary
+del(dictionary["key"])
+df.index=id
+pandas.read_csv('filepath',index_col=)
+
+df[["colname1","colname2"]]
+df[1:2] #row selection
+df.loc[["id1","id2"]]
+df.loc[["id1","id2"],["colname1","colname2"]]
+
 
