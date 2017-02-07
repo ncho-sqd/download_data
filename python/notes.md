@@ -1,3 +1,5 @@
+###Python Learning Notes
+
 "a"*5
 
 type()
@@ -24,7 +26,7 @@ sister.capitalize()
 sister.replace("a","az")
 
 pip3 install numpy
-import numpy as np #this is prefereed for readability
+import numpy as np #this is preferred for readability
 from numpy import array  #no need to use np
 np.array.shape #prints dimension of array
 np_2d[0][2] is equivalent to np_2d[0,2]
