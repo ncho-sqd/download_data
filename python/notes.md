@@ -45,11 +45,15 @@ dictionary.keys()
 "key" in dictionary
 del(dictionary["key"])
 df.index=id
-pandas.read_csv('filepath',index_col=)
+pandas.read_csv('filepath',index_col=)  #read data into dataframe
 
 df[["colname1","colname2"]]
 df[1:2] #row selection
 df.loc[["id1","id2"]]
 df.loc[["id1","id2"],["colname1","colname2"]]
 
+numpy.logical_and(bmi>21,bmi<22), logical_or(), logical_not() #these are logical operators for numpy arrays
+if, else, elif #conditionals
 
+#Subsetting dataframe
+cars[np.logical_and(cars["cars_per_cap"]>=100, cars["cars_per_cap"]<=500)] #need to create subset boolean array by using panda series not df
