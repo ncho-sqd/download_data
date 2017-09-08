@@ -17,11 +17,12 @@ for iter = 1:num_iters
     %       of the cost function (computeCost) and gradient here.
     %
 
-theta = theta - alpha*(sum(X'*(X*theta-y)))/m;
-fprintf('iterno: %f\n', iter);
-fprintf('%f %f\n', theta(1), theta(2));
+%theta(1) = theta(1) - alpha*(sum(X(:,1)'*(X*theta-y)))/m;
+%theta(2) = theta(2) - alpha*(sum(X(:,2)'*(X*theta-y)))/m;
+%fprintf('iterno: %f\n', iter);
+%fprintf('%f %f\n', theta(1), theta(2));
 
-
+theta = theta - (alpha/m)*((X'*(X*theta-y)));
 
 
 
